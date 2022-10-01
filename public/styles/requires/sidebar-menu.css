@@ -1,0 +1,47 @@
+.sidebar-menu {
+  z-index: 1;
+  background-color: #372948;
+  position: fixed;
+  height: 100vh;
+  padding-top: 3.5rem;
+  width: 200px;
+  left: -150px;
+  transition: .55s;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar-menu {
+    left: -200px;
+  }
+}
+
+.my-sidebar-open {
+  left: 0;
+}
+
+/* Options */
+.sidebar-option {
+  text-align: right;
+  margin-bottom: .25rem;
+
+  border-bottom: solid;
+  border-width: .1rem;
+  border-color: #FFECEF;
+}
+
+.sidebar-option a {
+  text-decoration: none;
+}
+
+.option-info {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline;
+  font-size: 1rem;
+  color: #FFECEF;
+}
+
+.option-img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}

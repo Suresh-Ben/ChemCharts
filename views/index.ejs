@@ -10,43 +10,231 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
   <link rel="stylesheet" href="styles/requires/nav-bar.css">
+  <link rel="stylesheet" href="styles/requires/sidebar-menu.css">
   <link rel="stylesheet" href="styles/index.css">
 
 </head>
 
 <body>
 
-  <!-- nav -->
+  <!-- nav - custom for index with links-->
   <div class="nav-bar">
+
+    <a class="sidebar-toggler">
+      <img class="sidebar-toggler-img" src="content/images/slides.png" alt="menu">
+    </a>
     <!-- Brand -->
     <a class="nav-bar-link-brand" href="/">
       <h1 class="nav-bar-brand"><span>Chem</span>Charts</h1>
     </a>
-
-    <!-- menu button -->
+    <!-- Brand -->
 
 
     <!-- Links -->
     <div class="nav-bar-links-container">
 
+      <!-- menu button -->
       <a class="nav-bar-link">
         <img class="nav-bar-img" src="content/images/menu.png" alt="menu">
       </a>
 
       <a class="nav-bar-link nav-side-link" href="#">Home</a>
-      <a class="nav-bar-link nav-side-link" href="#">Graphs</a>
-      <a class="nav-bar-link nav-side-link" href="#">Conversions</a>
-      <a class="nav-bar-link nav-side-link" href="#">About us</a>
+      <a class="nav-bar-link nav-side-link" href="#Graphs">Graphs</a>
+      <a class="nav-bar-link nav-side-link" href="#Conversions">Conversions</a>
+      <a class="nav-bar-link nav-side-link" href="#About">About us</a>
     </div>
+    <!-- Links -->
 
   </div>
   <!-- nav -->
 
+  <%- include("requires/sidebar-menu") -%>
+
+
+  <section class="home-body">
+
+
+    <!-- Home -->
+
+    <section id="Home" class="container home-container">
+
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <img src="content/images/Home.jpg" alt="test tubes">
+        </div>
+
+        <div class="col-lg-6 col-md-6 home-intro">
+          <h2><span>Chem</span>Charts - Everything a chemical engineer needs to speed up</h2>
+
+          <div class="row justify-content-center">
+            <input type="search" class="home-search col-lg-4 col-5" placeholder="Search" />
+            <button type="button" class="home-search col-lg-2 col-3">Search</button>
+          </div>
+
+          <div class=" pt-2">
+            <a href="#" class="px-2 home-links">Graphs</a>
+            <a href="#" class="px-2 home-links">Conversions</a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Home -->
+    <div class="line d-flex justify-content-center">
+      <hr class="w-75">
+    </div>
+
+    <!-- graph -->
+
+    <section id="Graphs" class="my-graphs">
+
+      <div class="container">
+
+        <h1>Graphs</h1>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Graph Name</th>
+              <th class="table-disc" scope="col">Discription</th>
+            </tr>
+          </thead>
+        </table>
+
+        <div class="scrollable">
+
+          <table class="table table-striped">
+            <tbody>
+
+              <tr>
+                <td class="table-name"><a href="#"> Conv #1 </a></td>
+                <td class="table-disc">discription #1</td>
+              </tr>
+
+              <!-- To do -->
+              <!-- need to add graphs -->
+
+
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- graph -->
+
+    <div class="line d-flex justify-content-center">
+      <hr class="w-75">
+    </div>
+
+    <!-- Conversions -->
+
+    <section id="Conversions" class="my-conv">
+
+      <div class="container">
+
+        <h1>Conversions</h1>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Conversion</th>
+              <th class="table-disc" scope="col">Discription</th>
+            </tr>
+          </thead>
+        </table>
+
+        <div class="scrollable">
+
+          <table class="table table-striped">
+            <tbody>
+
+              <tr>
+                <td class="table-name"><a href="temperature.html"> Temprature conversion </a></td>
+                <td class="table-disc">convert temperature between Celsius, Fahrenheit, Kelvin and Rankine</td>
+              </tr>
+
+              <!-- To do -->
+              <!-- need to add convS -->
+
+
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Conversions -->
+
+    <div class="line d-flex justify-content-center">
+      <hr class="w-75">
+    </div>
+
+    <!-- About -->
+
+    <section id="About" class="my-about">
+      <div class="container">
+
+        <h1>About us</h1>
+
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-lg-3 col-md-4 text-center">
+            <img class="about-img" src="content/images/Logo_of_NIT_Jalandhar.png" alt="">
+          </div>
+
+          <div class="col-lg-5 col-md-5">
+            <p>
+              This website is made as a project by Suresh Bennabatthula and Korra Hari Krishna under the guidence of Dr.Dr Raj Kumar Arya from Dr.B.R.Ambedkar National institue of Jalandhar, Punjab.
+              Visit our college website at <a href="https://www.nitj.ac.in/">nitj.ac.in</a>
+            </p>
+            <a class="btn btn-sm btn-outline-primary" href="https://www.nitj.ac.in/">Visit Nitj</a>
+            <a class="btn btn-sm btn-outline-primary" href="mailto:sureshb.cm.19@nitj.ac.in">Write us</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <div class="line d-flex justify-content-center">
+      <hr class="w-75">
+    </div>
+
+    <!-- footer -->
+
+    <footer class="text-center my-footer">
+
+      <div class="foot">
+
+        <h1><span>Chem</span>Charts</h1>
+        <p>Everything a chemical engineer needs to speed up <br> </p>
+        <p>Designed by <span>Suresh Bennabatthula</span> and <span>Korra Hari Krishna</span></p>
+      </div>
+
+    </footer>
+
+    <!-- footer -->
+
+  </section>
+
+
+
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="scripts/index.js">
+  <script src="scripts/index.js"></script>
+  <script src="scripts/requires/nav-bar.js"></script>
+  <script src="scripts/requires/sidebar-menu.js"></script>
 
-  </script>
 </body>
 
 </html>

@@ -29,6 +29,8 @@
 
 @media only screen and (max-width: 600px) {
   .nav-bar-links-container {
+    position: absolute;
+    right: 0;
     flex-flow: column;
   }
 
@@ -53,4 +55,129 @@
 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+
+/* home-body */
+.home-body
+{
+  padding-top: 7vh;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-body {
+    padding-left: 0;
+  }
+}
+
+/* home */
+.home-container {
+  height: 93vh;
+  width: 100%;
+}
+
+.home-col {
+  text-align: center;
+}
+
+.home-container .row img {
+  width: 75%;
+  border-radius: 50%;
+  padding-left: 25%;
+}
+
+.home-intro {
+  text-align: center;
+}
+
+.home-intro span {
+  color: #87A2FB;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-intro {
+    margin-bottom: auto;
+  }
+}
+
+.home-search {
+  border-radius: .35rem;
+  border-style: solid;
+  border-width: .1rem;
+  font-size: .85rem;
+}
+
+.home-intro button {
+  border-color: #6F38C5;
+  color: #6F38C5;
+}
+
+.home-links {
+  border-radius: .35rem;
+  padding: .2rem;
+  color: white;
+  background-image: linear-gradient(45deg, #0041C2, #4169E1);
+  box-shadow: 2px 2px 3px #98AFC7;
+  text-decoration: none;
+}
+
+.home-links:hover {
+
+  border: solid 1px blue;
+  color: black;
+  background-image: none;
+}
+
+/* graph */
+.my-graphs {
+  height: 93vh;
+  padding-top: 5rem;
+}
+
+.scrollable {
+  height: 70vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.table-name a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-disc {
+    display: none;
+  }
+}
+
+/* conevrsions */
+.my-conv {
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+/* about */
+.about-img {
+  height: 13rem;
+}
+
+/* footer */
+.foot {
+  background-color: #AEBDCA;
+  height: 17vh;
+  padding-top: 1.5rem;
+}
+
+.foot h1
+{
+  font-size: 2rem;
+}
+.foot span{
+  color: red;
+}
+.foot p
+{
+  font-size: .85rem;
 }
