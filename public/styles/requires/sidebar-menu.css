@@ -12,6 +12,7 @@
 @media only screen and (max-width: 600px) {
   .sidebar-menu {
     left: -200px;
+    padding-top: 4rem;
   }
 }
 

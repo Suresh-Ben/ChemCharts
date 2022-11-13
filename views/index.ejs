@@ -17,37 +17,7 @@
 
 <body>
 
-  <!-- nav - custom for index with links-->
-  <div class="nav-bar">
-
-    <a class="sidebar-toggler">
-      <img class="sidebar-toggler-img" src="content/images/slides.png" alt="menu">
-    </a>
-    <!-- Brand -->
-    <a class="nav-bar-link-brand" href="/">
-      <h1 class="nav-bar-brand"><span>Chem</span>Charts</h1>
-    </a>
-    <!-- Brand -->
-
-
-    <!-- Links -->
-    <div class="nav-bar-links-container">
-
-      <!-- menu button -->
-      <a class="nav-bar-link">
-        <img class="nav-bar-img" src="content/images/menu.png" alt="menu">
-      </a>
-
-      <a class="nav-bar-link nav-side-link" href="#">Home</a>
-      <a class="nav-bar-link nav-side-link" href="#Graphs">Graphs</a>
-      <a class="nav-bar-link nav-side-link" href="#Conversions">Conversions</a>
-      <a class="nav-bar-link nav-side-link" href="#About">About us</a>
-    </div>
-    <!-- Links -->
-
-  </div>
-  <!-- nav -->
-
+  <%- include("requires/nav-bar") -%>
   <%- include("requires/sidebar-menu") -%>
 
 
@@ -154,7 +124,7 @@
             <tbody>
 
               <tr>
-                <td class="table-name"><a href="temperature.html"> Temprature conversion </a></td>
+                <td class="table-name"><a href="/temperature-conv"> Temprature conversion </a></td>
                 <td class="table-disc">convert temperature between Celsius, Fahrenheit, Kelvin and Rankine</td>
               </tr>
 
@@ -228,10 +198,11 @@
   </section>
 
 
-
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
   <script src="scripts/index.js"></script>
+
   <script src="scripts/requires/nav-bar.js"></script>
   <script src="scripts/requires/sidebar-menu.js"></script>
 
