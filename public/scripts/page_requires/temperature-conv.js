@@ -1,4 +1,4 @@
-const socket = io('localhost:3000');
+const socket = io('https://chemcharts-production.up.railway.app/');
 //buttons
 const convButton = $(".convert");
 const resetButton = $(".reset");
