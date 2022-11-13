@@ -3,7 +3,7 @@
   background-color: #372948;
   position: fixed;
   height: 100vh;
-  padding-top: 3.5rem;
+  padding-top: 8vh;
   width: 200px;
   left: -150px;
   transition: .55s;
@@ -12,7 +12,6 @@
 @media only screen and (max-width: 600px) {
   .sidebar-menu {
     left: -200px;
-    padding-top: 4rem;
   }
 }
 
