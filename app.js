@@ -47,11 +47,12 @@ server.listen(port, function() {
 //socket.io
 io.on('connection', function(socket) {
 
+//conversions
   //temperature Conversion
   socket.on('convert-temp', (data)=>{
     let convertion = tempConverter(data);
     io.to(socket.id).emit("converted-temperature", convertion);
   });
 
-
+//Graphs
 });
