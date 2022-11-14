@@ -5,17 +5,25 @@ const tempConverter = require(__dirname + '/requires/page_requires/temperature-c
 require('dotenv').config();
 const express = require("express");
 const ejs = require("ejs");
+const mysql = require('mysql');
 
 //requires init
 const app = express();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, { cors: { orgin: "*"}});
 
+//settings view
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
-//Variables
+//sensitive Variables
 const port = process.env.PORT;
+var client = mysql.createConnection({
+  host: process.env.MYSQLHOST,
+  port: process.env.MYSQLPORT,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASS
+});
 
 //Home-page
 app.get("/", function(req, res) {
