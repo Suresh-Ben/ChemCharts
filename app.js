@@ -55,6 +55,22 @@ server.listen(port, function() {
 //socket.io
 io.on('connection', function(socket) {
 
+  socket.on('load-home',()=>{
+
+    //collecting graphs data
+    let sql = "SELECT * FROM Data.graphs";
+    client.query(sql, (err, result)=>{
+      io.to(socket.id).emit('load-graphs', result);
+    });
+
+    //Collecting conversions data
+    sql = "SELECT * FROM Data.conv";
+    client.query(sql, (err, result)=>{
+      io.to(socket.id).emit('load-conv', result);
+    });
+
+  });
+
 //conversions
   //temperature Conversion
   socket.on('convert-temp', (data)=>{
