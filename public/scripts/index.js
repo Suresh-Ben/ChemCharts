@@ -1,4 +1,4 @@
-const socket = io('localhost:3000');
+const socket = io('https://chemcharts-production.up.railway.app/');
 socket.on('connection');
 socket.emit('load-home');
 
