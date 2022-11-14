@@ -1,4 +1,4 @@
-const socket = io('https://chemcharts-production.up.railway.app/');
+import socket from "../requires/socket.js";
 //buttons
 const convButton = $(".convert");
 const resetButton = $(".reset");

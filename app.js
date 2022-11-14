@@ -43,14 +43,6 @@ server.listen(port, function() {
   console.log("Server Started on port : " + port);
 });
 
-
-//**********//
-//Databases
-
-
-
-
-
 //*********//
 //socket.io
 io.on('connection', function(socket) {
