@@ -1,0 +1,11 @@
+.topic{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .topic{
+    font-size: 1.5rem;
+  }
+}

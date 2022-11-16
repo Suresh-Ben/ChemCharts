@@ -11,6 +11,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="styles/requires/genrel.css">
   <link rel="stylesheet" href="styles/requires/nav-bar.css">
   <link rel="stylesheet" href="styles/requires/sidebar-menu.css">
   <link rel="stylesheet" href="styles/page_requires/temperature-conv.css">
@@ -26,6 +27,10 @@
   <!-- temperature-body -->
 
   <div class="container temp-body">
+
+    <!-- Headding -->
+    <h2 class="topic">Celsius, Fahrenheit, Kelvin and Rankine Converter</h2>
+
     <div class="row align-items-center justify-content-center">
 
       <div class="col-lg-5 col-md-5 temp-col">
@@ -52,6 +57,52 @@
       <button class="btn btn-outline-primary mx-2 px-3 py-0 convert">Convert</button>
     </div>
 
+
+    <!-- formula section -->
+    <div class="formulai row align-items-center">
+
+      <h4>Conversion Formulae</h4>
+      <p>The conversion formulae to convert between Kelvin, Celsius, Fahrenheit and Rankine are as follows:</p>
+
+      <div class="col-lg-5 col-md-5">
+        <p>Conversions to <a style="text-decoration:none;" href="https://en.wikipedia.org/wiki/Celsius">Celsius</a></p>
+        <ul>
+          <li>°C = K - 273.15</li>
+          <li>°C = (°F - 32) x 5/9</l i>
+          <li>°C = (°R - 491.67) x 5/9</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-5 col-md-5">
+        <p>Conversions to <a style="text-decoration:none;" href="https://en.wikipedia.org/wiki/Fahrenheit">Fahrenheit</a></p>
+        <ul>
+          <li>°F = (K x 9/5) - 459.67</li>
+          <li>°F = (°C x 9/5) + 32</li>
+          <li>°F = °R - 459.67</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-5 col-md-5">
+        <p>Conversions to <a style="text-decoration:none;" href="https://en.wikipedia.org/wiki/Kelvin">Kelvin</a></p>
+        <ul>
+          <li>K = °C + 273.15</li>
+          <li>K = (°F + 459.67) x 5/9</li>
+          <li>K = °R x 5/9</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-5 col-md-5">
+        <p>Conversions to <a style="text-decoration:none;" href="https://en.wikipedia.org/wiki/Rankine_scale">Rankine</a></p>
+        <ul>
+          <li>°R = K x 9/5</li>
+          <li>°R = (°C + 273.15) x 9/5</li>
+          <li>°R = °F + 459.67</li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- formula section -->
+
   </div>
 
   <!-- temperature-body -->
@@ -60,6 +111,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+  <script src="scripts/requires/genrel.js"></script>
   <script src="scripts/requires/nav-bar.js"></script>
   <script src="scripts/requires/sidebar-menu.js"></script>
 

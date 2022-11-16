@@ -1,8 +1,8 @@
 /* temperature-body */
 .temp-body
 {
-  height: 100vh;
   padding-top: 8vh;
+  padding-bottom: 1rem;
 }
 
 .row
@@ -37,7 +37,7 @@
   margin-left: 55%;
   margin-bottom: .5rem;
 }
-
+/* 
 
 .temp-body a {
   border-radius: .35rem;
@@ -46,4 +46,8 @@
   background-image: linear-gradient(45deg, #0041C2, #4169E1);
   box-shadow: 2px 2px 3px #98AFC7;
   text-decoration: none;
+} */
+
+.formulai{
+  margin-top: 2rem;
 }
