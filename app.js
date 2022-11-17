@@ -30,13 +30,20 @@ app.get("/", function(req, res) {
     res.render("index", {pageOption : 1});
 });
 
-//Conversions
-app.get("/temperature-conv", function(req, res) {
-    res.render("pages/temperature-conv", {pageOption : 0});
+//Pages
+app.get("/:topic", function(req, res) {
+    let request = req.params.topic;
+    let href = request.substring(request.length-5, request.length);
+
+    //conversions
+    if(href == "-conv")
+      res.render("pages/convs/" + request, {pageOption : 0});
+    else if(href == "graph")
+      res.render("pages/graphs/" + request, {pageOption : 0});
+
 });
 
 //Graphs
-
 
 //server connection
 server.listen(port, function() {

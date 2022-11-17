@@ -1,0 +1,93 @@
+<!-- **Page detail** -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChemCharts - "Temperature Conversion"</title>
+  <link rel="icon" type="image/x-icon" href="css/content/icon.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles/requires/genrel.css">
+  <link rel="stylesheet" href="styles/requires/nav-bar.css">
+  <link rel="stylesheet" href="styles/requires/sidebar-menu.css">
+  <link rel="stylesheet" href="styles/page_requires/molecular-weight-conv.css">
+
+</head>
+
+<body>
+
+  <%- include("../../requires/nav-bar") -%>
+  <%- include("../../requires/sidebar-menu") -%>
+
+  <div class="page-body container">
+
+    <h2 class="topic">Molecular Weight Calculator</h2>
+    <p>This online calculator, you can use for computing the average molecular weight (MW) of molecules by entering the chemical formulas (for example C3H4OH(COOH)3 ).</p>
+
+    <div class="common">
+      <label style="font-weight:bold;" for="common">Common Organic Compounds</label><br>
+
+      <div class="dropdown">
+        <button class="dropbtn calculate">Dropdown <span>˅</span></button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+    <label style="font-weight:bold;" for="formula">Chemical formula</label>
+    <div class="row input-area container">
+      <input class="formula col-md-5 col-lg-5" id="formula" name="formula" size="28" value="">
+      <button class="calculate col-md-4 col-lg-4 btn btn-outline-primary" type="button" name="button">Calculate</button>
+    </div>
+
+    <hr>
+    <!-- molecular table -->
+    <table class="table table-striped">
+
+      <thead>
+        <tr>
+          <th>Atom <br> (count) </th>
+          <th>Molar Mass <br> (g/mol) </th>
+          <th>Subtotal Mass <br> (g/mol) </th>
+        </tr>
+      </thead>
+
+      <tbody class="table-body">
+        <tr>
+          <td>C</td>
+          <td>12.01</td>
+          <td>25.5</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <hr>
+    <p style="font-weight:bold; display:inline-block;"> Total Molecular weight </p>
+    <input class="weight" type="text" name="" value="">
+
+    <br><br><br>
+    <p style="font-size: .7rem" >!!!we cannot be held responsible for errors in the calculation,
+      the program itself or the explanation. For question or remarks please contact us.</p>
+
+      **Still Working**
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+  <script src="scripts/requires/genrel.js"></script>
+  <script src="scripts/requires/nav-bar.js"></script>
+  <script src="scripts/requires/sidebar-menu.js"></script>
+
+  <script type="module" src="scripts/page_requires/molecular-weight-conv.js"></script>
+
+</body>
+
+</html>
