@@ -1,3 +1,3 @@
-const socket = io('https://chemcharts-production.up.railway.app/');
+const socket = io('https://chemcharts.onrender.com/');
 
 export default socket;
